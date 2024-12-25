@@ -114,7 +114,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Tampercraft\include;$(JAVA_HOME)/include;$(JAVA_HOME)/include/win32</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(JAVA_HOME)\include;$(ProjectDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -156,7 +156,6 @@
   <ItemGroup>
     <ClInclude Include="include\jnihook.h" />
     <ClInclude Include="include\jnihook.hpp" />
-    <ClInclude Include="json.hpp" />
     <ClInclude Include="mongoose.h" />
     <ClInclude Include="src\classfile.hpp" />
     <ClInclude Include="src\uuid.hpp" />
